@@ -1,5 +1,6 @@
 const express = require('express');
 const controller = require("./controller");
+const weather = require("./weather");
 
 const app = express();
 
@@ -8,6 +9,7 @@ app.set("view engine", "ejs");
 app.use(express.static("./public"));
 
 controller(app);
+weather(app);
 
 app.use(function(req, res) {
    res.render("404");
