@@ -6,11 +6,20 @@
     <meta name="theme-color" content="#000000"/>
     <title>What Shoes Today?</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
   </head>
   <body>
 
+    <div id="getCoords">
+      <p>Error - Manual Entry</p>
+      <input id="getLat" type="text" placeholder="Lattitude"></input>
+      <input id="getLong" type="text" placeholder="Longitude"></input>
+      <button id="submitCoords">Submit</button>
+    </div>
+
     <h1>What Shoes Should I Wear Today?</h1>
+    <button id="getTemp" type="button">Temperature</button>
+    <button id="getSnowHistory" type="button">Did it snow?</button>
     <p id="test"></p>
 
     <script src="js/main.js" charset="utf-8"></script>
